@@ -13,46 +13,43 @@
 </head>
 
 <body>
-  <!-- scripts and stuff :) -->
   <!-- Google Tag Manager (noscript) -->
   <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KW2RXZ2M"
             height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <!-- end of scripts and stuff :) -->
 
   <div class="container">
-    <div class="avatar"></div>
+    <!-- Accessible avatar -->
+    <img class="avatar" src="avatar.jpg" alt="Okan Karakas" loading="lazy" />
+
     <h1>Okan Karakas</h1>
     <p>Just using this for a Google Analytics course.</p>
 
     <div class="links">
       <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-      <a href="https://www.facebook.com/" target="_blank">Facebook</a>
       <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-      <a href="https://www.twitter.com/" target="_blank">X / Twitter</a>
-      <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
-      <a href="https://www.youtube.com/" target="_blank">YouTube</a>
       <a href="https://github.com/" target="_blank">GitHub</a>
     </div>
+
     <!-- Visual separator -->
-<div class="form-separator"></div>
+    <div class="form-separator"></div>
 
-<!-- Contact Form -->
-<form class="contact-form"
-      action="mailto:fuck@duck.com"
-      method="post"
-      enctype="text/plain">
+    <!-- Contact Form -->
+    <form class="contact-form"
+          action="mailto:ok27@duck.com"
+          method="post"
+          enctype="text/plain">
 
-  <h2>Contact</h2>
+      <h2>Contact</h2>
 
-  <input type="text" name="name" placeholder="Your name" required />
-  <input type="email" name="email" placeholder="Your email" required />
-  <textarea name="message" rows="4" placeholder="Your message" required></textarea>
+      <input type="text" name="name" placeholder="Your name" maxlength="80" required />
+      <input type="email" name="email" placeholder="Your email" maxlength="120" required />
+      <textarea name="message" rows="4" placeholder="Your message" maxlength="1000" required></textarea>
 
-  <button type="submit">Send message</button>
-</form>
+      <button type="submit">Send message</button>
+    </form>
 
     <footer>
       © 2025 · All rights reserved
