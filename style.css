@@ -47,7 +47,7 @@ h1 {
 
 p {
   font-size: 0.95rem;
-  color: #555;
+  color: inherit; /* ensures readability in both modes */
   margin-bottom: 1.5rem;
 }
 
@@ -59,7 +59,7 @@ p {
   margin-bottom: 0.75rem;
   border-radius: 12px;
   background: #f5f5f5;
-  color: #333;
+  color: #111; /* explicit readable color */
   font-weight: 500;
   transition: transform 0.15s ease, background 0.15s ease;
 }
@@ -129,6 +129,7 @@ body.dark-mode {
 
 body.dark-mode .container {
   background: #333;
+  color: #f5f5f5; /* forces readable text inside container */
   box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
@@ -149,10 +150,15 @@ body.dark-mode .contact-form textarea {
   transform: scale(1.05);
 }
 
-/* Active link highlight */
 .links a.active {
   background-color: #d0e6f7;
+  color: #111; /* readable in light mode */
   transform: translateY(-2px);
+}
+
+body.dark-mode .links a.active {
+  background-color: #555;
+  color: #fff; /* readable in dark mode */
 }
 
 /* Theme toggle button */
@@ -175,5 +181,6 @@ body.dark-mode .contact-form textarea {
 footer {
   margin-top: 1.5rem;
   font-size: 0.75rem;
-  color: #999;
+  color: inherit; /* follows mode automatically */
+  opacity: 0.7;
 }
