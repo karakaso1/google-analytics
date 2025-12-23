@@ -47,7 +47,7 @@ h1 {
 
 p {
   font-size: 0.95rem;
-  color: inherit; /* ensures readability in both modes */
+  color: inherit; /* fixes mobile + dark mode */
   margin-bottom: 1.5rem;
 }
 
